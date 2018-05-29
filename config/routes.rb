@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
   root 'home#index'
-  get '/my_route', to: 'home#my_house'
+  # get '/my_route', to: 'home#my_house'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  namespace :api do 
+    namespace :v1 do 
+     resources :fruits, only: [:index, :create, :destroy, :update]
+    end 
+  end 
 end

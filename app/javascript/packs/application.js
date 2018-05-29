@@ -8,5 +8,5 @@
 // layout file, like app/views/layouts/application.html.erb
 
 console.log('Hello World from Webpacker')
-import CustomReact from './custom_react';
+import Main from './main';
 import HelloReact from './hello_react';
