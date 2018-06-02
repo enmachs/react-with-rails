@@ -49,13 +49,6 @@ class Main extends Component {
     })
   };
   handleUpdate = (fruit) => {
-    // fetch(`http://localhost:3000/api/v1/fruits/${fruit.id}`, 
-    // {
-    //   method: 'PUT',
-    //   body: JSON.stringify({fruit: fruit}),
-    //   headers: {
-    //     'Content-Type': 'application/json'
-    //   }
     axios.put(`http://localhost:3000/api/v1/fruits/${fruit.id}`, JSON.stringify({fruit: fruit}),
     {
       headers: {
